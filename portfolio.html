@@ -200,6 +200,18 @@
             box-shadow: 0 20px 40px rgba(99, 102, 241, 0.25);
         }
 
+        .hero-avatar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(145deg, rgba(99, 102, 241, 0.18), rgba(99, 102, 241, 0.04));
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 4.5rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+            color: var(--accent-color);
+        }
+
         /* About & Personal Profile */
         .about-grid {
             display: grid;
@@ -484,86 +496,6 @@
             font-size: 0.9rem;
         }
 
-        /* Resume Preview Button + Modal */
-        .resume-preview-section {
-            text-align: center;
-            padding: 20px 20px 60px;
-        }
-
-        .resume-modal-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(15, 23, 42, 0.85);
-            backdrop-filter: blur(4px);
-            z-index: 2000;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .resume-modal-overlay.active {
-            display: flex;
-        }
-
-        .resume-modal-box {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            width: 100%;
-            max-width: 850px;
-            height: 85vh;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-        }
-
-        .resume-modal-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px 20px;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .resume-modal-header h3 {
-            font-size: 1.1rem;
-        }
-
-        .resume-modal-close {
-            background: none;
-            border: none;
-            color: var(--text-secondary);
-            font-size: 1.3rem;
-            cursor: pointer;
-            transition: var(--transition);
-            line-height: 1;
-        }
-
-        .resume-modal-close:hover {
-            color: var(--accent-color);
-        }
-
-        .resume-modal-body {
-            flex-grow: 1;
-        }
-
-        .resume-modal-body iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            background-color: #fff;
-        }
-
-        @media (max-width: 768px) {
-            .resume-modal-box {
-                height: 90vh;
-            }
-        }
-
         /* RESPONSIVE DESIGN - FIXED FOR MOBILE PHONES */
         @media (max-width: 768px) {
             .nav-links {
@@ -697,7 +629,7 @@
                 </div>
             </div>
             <div class="hero-img-container">
-                <img src="portfolio.jpg" alt="Sambhaji Pawar" class="hero-profile-img">
+                <div class="hero-profile-img hero-avatar" role="img" aria-label="Sambhaji Pawar">SP</div>
             </div>
         </section>
 
@@ -706,17 +638,17 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-grid">
                 <div class="about-info">
-                    <p>I am a highly motivated computer applications graduate with strong fundamental knowledge in programming and web technologies. With training in multiple languages like Java, C, Python, and PHP, I enjoy transforming ideas into functional digital platforms.</p>
-                    <p>My career objective is to join a progressive organization where I can apply my problem-solving skills, expand my technical horizons, and actively contribute to development initiatives.</p>
-                    <p><strong>Areas of Interest:</strong> Data Analysis, Object-Oriented Programming (OOP) Concepts, Computer Networks & Hardware.</p>
+                    <p>Detail-oriented BCA graduate with strong skills in Java, Python, SQL, and front-end web development. Passionate about applying object-oriented programming concepts and software development fundamentals to deliver impact in an agile team environment.</p>
+                    <p>Currently pursuing a Master of Computer Applications (MCA), I'm looking to bring solid fundamentals and a continuous learning mindset to a team that ships real software.</p>
+                    <p><strong>Areas of Interest:</strong> Data Analysis & Problem Solving, Object-Oriented Programming (OOP) Concepts, Computer Networking & Hardware Fundamentals, Team Collaboration & Agile Adaptation.</p>
                 </div>
                 <div class="personal-card">
                     <h3>Personal Profile</h3>
                     <ul class="profile-list">
                         <li><span>Languages:</span> <span>English, Hindi, Kannada</span></li>
                         <li><span>Location:</span> <span>Gokak, Karnataka</span></li>
-                        <li><span>Nationality:</span> <span>Indian</span></li>
-                        <li><span>Hobbies:</span> <span>Learning, Movies, Music</span></li>
+                        <li><span>Soft Skills:</span> <span>Adaptability</span></li>
+                        <li><span>Mindset:</span> <span>Continuous learning</span></li>
                     </ul>
                 </div>
             </div>
@@ -734,8 +666,7 @@
                         <span class="skill-tag">Java</span>
                         <span class="skill-tag">Python</span>
                         <span class="skill-tag">C</span>
-                        <span class="skill-tag">PHP</span>
-                        <span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">Data Structures & Algorithms</span>
                     </div>
                 </div>
                 <!-- Web Technologies -->
@@ -765,6 +696,7 @@
                         <span class="skill-tag">Ubuntu</span>
                         <span class="skill-tag">MS Office</span>
                         <span class="skill-tag">Open Office</span>
+                        <span class="skill-tag">VS Code</span>
                     </div>
                 </div>
             </div>
@@ -774,6 +706,12 @@
         <section id="education">
             <h2 class="section-title">Education</h2>
             <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 - 2027</div>
+                    <div class="timeline-title">Master of Computer Applications (MCA)</div>
+                    <div class="timeline-subtitle">KLE Technological University, Hubli</div>
+                    <div class="timeline-grade">1st Sem CGPA: 8.38</div>
+                </div>
                 <div class="timeline-item">
                     <div class="timeline-date">2022 - 2025</div>
                     <div class="timeline-title">Bachelor of Computer Applications (BCA)</div>
@@ -786,12 +724,6 @@
                     <div class="timeline-subtitle">Govt. PU College, Gokak (Department of Pre-University Education, Karnataka)</div>
                     <div class="timeline-grade">Percentage: 80.50%</div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">Passed in 2020</div>
-                    <div class="timeline-title">SSLC</div>
-                    <div class="timeline-subtitle">Govt. Pre-University College, Gokak (KSEEB, Karnataka)</div>
-                    <div class="timeline-grade">Percentage: 69.76%</div>
-                </div>
             </div>
         </section>
 
@@ -801,12 +733,13 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-body">
-                        <h3 class="project-title">i-store.com</h3>
-                        <p class="project-desc">Designed and built the user interface for an online shopping platform. Focused heavily on creating a responsive and interactive graphical user interface (GUI) to maximize user engagement.</p>
+                        <h3 class="project-title">E-cart.com</h3>
+                        <p class="project-desc">An online shopping front-end built with a 3-member team. Designed and built an interactive GUI using HTML5 and CSS3, mapped out user workflows for a seamless browsing experience, and optimized front-end code for visual consistency and cross-browser rendering.</p>
                         <div class="project-meta">
-                            <span><i class="fa-solid fa-code-branch"></i> HTML, CSS</span>
+                            <span><i class="fa-solid fa-code-branch"></i> HTML5, CSS3</span>
                             <span>Role: Front-End Developer</span>
                         </div>
+                        <a href="https://github.com/sambhaji-pawar" target="_blank" rel="noopener" style="margin-top:16px; color: var(--accent-color); font-size:0.9rem; font-weight:600;">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.75rem;"></i></a>
                     </div>
                 </div>
             </div>
@@ -838,7 +771,21 @@
                             <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
                             <div class="contact-details">
                                 <h4>Address</h4>
-                                <p>Acharya Galli, Gokak - 591307</p>
+                                <p>Gokak, Karnataka - 591307</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <p><a href="https://www.linkedin.com/in/sambhajipawar" target="_blank" rel="noopener">linkedin.com/in/sambhajipawar</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <p><a href="https://github.com/sambhaji-pawar" target="_blank" rel="noopener">github.com/sambhaji-pawar</a></p>
                             </div>
                         </div>
                     </div>
@@ -846,43 +793,7 @@
             </div>
         </section>
 
-        <!-- Resume Preview Button -->
-        <section class="resume-preview-section">
-            <button class="btn btn-primary" id="resume-preview-btn" onclick="document.getElementById('resume-modal-overlay').classList.add('active')">
-                <i class="fa-solid fa-file-lines"></i> View Resume
-            </button>
-        </section>
     </main>
-
-    <!-- Resume Preview Modal -->
-    <div class="resume-modal-overlay" id="resume-modal-overlay">
-        <div class="resume-modal-box">
-            <div class="resume-modal-header">
-                <h3>Resume Preview</h3>
-                <button class="resume-modal-close" onclick="document.getElementById('resume-modal-overlay').classList.remove('active')">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-            <div class="resume-modal-body">
-                <!-- Replace "resume.pdf" below with the actual filename of your resume -->
-                <iframe src="DAA_Programs.pdf" title="Resume Preview"></iframe>
-            </div>
-        </div>
-    </div>
-    <script>
-        // Close modal when clicking outside the box
-        document.getElementById('resume-modal-overlay').addEventListener('click', function (e) {
-            if (e.target === this) {
-                this.classList.remove('active');
-            }
-        });
-        // Close modal with Escape key
-        document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape') {
-                document.getElementById('resume-modal-overlay').classList.remove('active');
-            }
-        });
-    </script>
 
     <!-- Footer -->
     <footer>
