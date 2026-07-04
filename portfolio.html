@@ -77,12 +77,19 @@
 
         /* Navigation Bar */
         header {
-            position: sticky;
+            position: fixed;
             top: 0;
+            left: 0;
+            width: 100%;
             z-index: 1000;
             background-color: rgba(15, 23, 42, 0.9);
             backdrop-filter: blur(10px);
             border-bottom: 1px solid var(--border-color);
+        }
+
+        /* Offset for the fixed header so content doesn't sit underneath it */
+        main {
+            padding-top: 76px;
         }
 
         .nav-container {
@@ -629,7 +636,7 @@
                 </div>
             </div>
             <div class="hero-img-container">
-                <img src="portfolio.jpg" alt="Sambhaji Pawar" class="hero-profile-img">
+                <div class="hero-profile-img hero-avatar" role="img" aria-label="Sambhaji Pawar">SP</div>
             </div>
         </section>
 
